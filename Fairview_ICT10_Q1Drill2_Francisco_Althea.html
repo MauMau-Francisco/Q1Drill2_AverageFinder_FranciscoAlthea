@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>String Showcase: My Basic Info</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0dde9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #e8afce;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 600px;
+        }
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #8c3e71;
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #934277;
+            background-color: #e395c8;
+            text-align: center;
+            width: 560px;        
+            margin-bottom: 25px; 
+            padding: 11px;
+            border-radius: 11px;
+        }
+        input {
+            width: 500px;
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #f2acda;
+            text-align: center;
+        }
+        button {
+            margin-top: 12px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            color: #9c4877;
+            cursor: pointer;
+           
+        }
+        button:hover {
+            background: #eb8bc9;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--container-->
+     
+    <div class="container">
+
+         <h1>❣ String Showcase ❣</h1> <!--Heading-->
+
+         <br>
+
+        <h2>Basic Profile Info</h2>
+
+        <!--placeholders-->
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="number" id="age" placeholder="Enter your age">
+        <input type="text" id="school" placeholder="Enter your school">
+
+        <!--button-->
+        <button py-click="generate_message">Generate Message</button>
+        <div id="output"></div>
+    </div>
+
+
+    <!-- connects -->
+    <py-config>
+        [[fetch]]
+        files = ["main.py"]
+    </py-config>
+      <script type="py" src="Fairview_ICT10_Q1Drill2_Francisco_Althea.py"></script>
+
+
+</body>
+</html>
